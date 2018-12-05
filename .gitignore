@@ -5,6 +5,7 @@
 @rerun.txt
 coverage/
 dist/browser-example.js
+tmp/
 lib/
 node_modules
 usage.txt

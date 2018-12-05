@@ -52,6 +52,7 @@ requiredModules:
       - 'dist/**/*'
       - 'lib/**/*'
       - 'node_modules/**/*'
+      - 'tmp/**/*'
     root: '**/*.js'
   stripLoaders: false
   transpilers:
