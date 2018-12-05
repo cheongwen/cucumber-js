@@ -18,5 +18,5 @@
       ]
     }
   },
-  "sourceMaps": "inline"
+  "sourceMaps": "both"
 }

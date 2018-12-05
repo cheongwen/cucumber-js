@@ -19,7 +19,9 @@ Before('@spawn', function() {
 })
 
 Before(function({ sourceLocation: { uri, line } }) {
-  this.tmpDir = path.join(projectPath, 'tmp', `${path.basename(uri)}:${line}`)
+  this.tmpDir = path.join(projectPath, 'tmp', `${path.basename(uri)}_${line}`)
+
+  fsExtra.removeSync(this.tmpDir)
 
   const tmpDirProfilePath = path.join(this.tmpDir, 'cucumber.js')
   const profileContent =
